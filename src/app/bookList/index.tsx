@@ -45,6 +45,11 @@ export default function BookList({
       }
     }
   };
+
+  const onDragStart = () => {
+    setHasChanged(false);
+  };
+
   const handleMouseEnter = (bookId: string) => {
     setHoveredBookId(bookId);
   };
@@ -117,6 +122,7 @@ export default function BookList({
       <div>
         <DragDropContext
           onDragEnd={onDragEnd}
+          onDragStart={onDragStart}
           onDragUpdate={onDragUpdateHandler}
         >
           <Droppable droppableId="showList">

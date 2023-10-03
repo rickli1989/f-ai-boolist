@@ -5,7 +5,7 @@ import React from "react";
 export function BookDetail({ book }: { book: Book }) {
   return (
     <div className="bg-red-500 flex max-w-full w-[475px] h-[710px] flex-col mt-14 pt-8 pb-6 px-5 rounded-md">
-      <div className="flex max-w-full  flex-col min-h-[263px] ml-1.5 pl-5 py-10 ">
+      <div className="flex max-w-full flex-col min-h-[263px] ml-1.5 pl-5 py-10 ">
         <div className="flex-row flex max-w-full min-h-[263px] ml-1.5 pl-5 py-10 relative">
           <Image
             src={book.imageUrl}
